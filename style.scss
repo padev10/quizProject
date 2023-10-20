@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(16, 140, 146);
+  font-family: Poppins, sans-serif;
+  height: auto;
+  padding: 4em 0;
+  // section
+  .container {
+    border-radius: 1em;
+    width: 80%;
+    background-color: rgb(1, 114, 148);
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.4);
+    // heading
+    .heading {
+      color: white;
+      text-align: center;
+      padding: 1em;
+      border-radius: 0.5em 0.5em 0 0;
+      background-color: rgba(0, 206, 206, 0.842);
+      p {
+        &:first-child {
+          font-size: 1.4em;
+          font-weight: 600;
+        }
+        &:nth-child(2) {
+          font-weight: 400;
+          font-size: 0.8em;
+        }
+      }
+    }
+    .div-txt {
+      display: flex;
+      column-gap: 2em;
+      padding: 0.4em;
+      margin-top: 1em;
+      justify-content: center;
+      align-items: center;
+      //score
+      .score-msg {
+        color: white;
+        font-size: 1em;
+        font-weight: 400;
+        // font weight
+        .s-results {
+          background-color: rgba(0, 255, 255, 0.508);
+          font-weight: 600;
+          border-radius: 0.4em;
+          padding: 0.4em;
+        }
+      }
+      // button
+      .t-again {
+        font-size: 0.8em;
+        border: none;
+        border-radius: 0.4em;
+        padding: 0.6em 1.2em;
+        color: rgb(0, 68, 89);
+        font-weight: 600;
+        cursor: pointer;
+        background-color: rgb(157, 255, 157);
+        // on hover
+        &:hover {
+          background-color: rgb(87, 255, 87);
+        }
+      }
+    }
+    // turn it invisible
+    .div-txt {
+      display: none;
+    }
+
+    // the form
+    .q-form {
+      padding: 0 2em;
+      //   question
+      .qts {
+        padding: 1em;
+        margin: 1em 0 1em 0;
+        border-radius: 0.5em;
+        background-color: white;
+        // paragraph
+        p {
+          font-size: 1em;
+          margin-bottom: 0.5em;
+        }
+        .option input {
+          cursor: pointer;
+        }
+      }
+      // green backgrounf
+      .green {
+        background-color: rgb(155, 255, 155);
+      }
+      // red backgrounf
+      .red {
+        background-color: rgb(255, 154, 154);
+      }
+    }
+    // submit button
+    #submit {
+      display: flex;
+      margin: 1em auto 1em auto;
+      color: rgb(0, 68, 89);
+      font-size: 1em;
+      font-weight: 600;
+      border: none;
+      border-radius: 5em;
+      padding: 0.6em 2.4em;
+      cursor: pointer;
+      // on hover
+      &:hover {
+        transition: all 0.2s;
+        color: white;
+        background-color: rgb(255, 135, 135);
+      }
+    }
+  }
+}
